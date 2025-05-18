@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Roman Numerals Tests</title>
+    <style>
+        .pass { color: green; }
+        .fail { color: red; }
+        .test-case { margin: 10px 0; padding: 5px; border: 1px solid #ddd; }
+    </style>
+</head>
+<body>
+    <h1>Roman Numerals Conversion Tests</h1>
+    <div id="test-results"></div>
+
+    <script type="module">
+        import { romanToInt, intToRoman } from './ai_roman_to_int.js';
+        import { runTests } from './tests.js';
+        
+        document.addEventListener('DOMContentLoaded', runTests);
+    </script>
+</body>
+</html>
