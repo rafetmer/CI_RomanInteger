@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body {
+    font-family: 'Press Start 2P', cursive;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, #e0c097, #f5deb3);
+    color: #ffffff;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.container {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    width: 50%;
+}
+
+h1 {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+input {
+    padding: 10px;
+    width: 80%;
+    margin-bottom: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 4px;
+    background: rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    background-color: rgba(0, 123, 255, 0.8);
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: rgba(0, 86, 179, 0.8);
+}
+
+p {
+    margin-top: 20px;
+    font-size: 1em;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.error {
+    color: red;
+}
+
+.history {
+    margin-top: 30px;
+    text-align: left;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    width: 40%;
+}
+
+.history h2 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.history table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.history th, .history td {
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    padding: 8px;
+    text-align: left;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.history th {
+    background: rgba(255, 255, 255, 0.2);
+}
