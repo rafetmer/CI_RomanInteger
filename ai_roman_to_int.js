@@ -1,6 +1,5 @@
-// Function to convert Roman numeral to integer
 function romanToInt(roman) {
-  if (!/^[IVXLCDM]+$/.test(roman)) { // Remove the 'i' flag
+  if (!/^[IVXLCDM]+$/.test(roman)) {
     throw new Error('Invalid Roman numeral.');
   }
   const invalidPatterns = /(IIII|XXXX|CCCC|MMMM|VV|LL|DD|IL|IC|ID|IM|VX|VL|VC|VD|VM|LC|LD|LM|DM)/;
@@ -9,16 +8,10 @@ function romanToInt(roman) {
   }
 
   const romanNumeralMap = {
-    I: 1,
-    V: 5,
-    X: 10,
-    L: 50,
-    C: 100,
-    D: 500,
-    M: 1000
+    I: 1, V: 5, X: 10, L: 50,
+    C: 100, D: 500, M: 1000
   };
   let intValue = 0;
-
   for (let i = 0; i < roman.length; i++) {
     const current = romanNumeralMap[roman[i]];
     const next = romanNumeralMap[roman[i + 1]];
@@ -28,19 +21,17 @@ function romanToInt(roman) {
       intValue += current;
     }
   }
-
   return intValue;
 }
 
-// Function to convert integer to Roman numeral
 function intToRoman(num) {
   if (
     typeof num !== 'number' ||
-!Number.isInteger(num) ||
-num < 1 ||
-num > 3999
+    !Number.isInteger(num) ||
+    num < 1 ||
+    num > 3999
   ) {
-    throw new Error('Invalid integer. Must be between 1 and 3999'); // Remove period
+    throw new Error('Invalid integer. Must be between 1 and 3999');
   }
 
   const intToRomanMap = [
@@ -59,14 +50,12 @@ num > 3999
     { value: 1, numeral: 'I' }
   ];
   let roman = '';
-
   for (const { value, numeral } of intToRomanMap) {
     while (num >= value) {
       roman += numeral;
       num -= value;
     }
   }
-
   return roman;
 }
 
