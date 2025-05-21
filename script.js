@@ -1,4 +1,4 @@
-import { romanToInt, intToRoman } from './ai_roman_to_int.js';
+import { romanToInt, intToRoman } from 'CI_RomanInteger/ai_roman_to_int.js';
 
 document.addEventListener('DOMContentLoaded', () => {
   const convertButton = document.getElementById('convertButton');
